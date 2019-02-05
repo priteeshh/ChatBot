@@ -1,24 +1,177 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7BH-kL-yXf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Chat BotVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatBotVC" id="BYZ-38-t0r" customClass="ChatBotVC" customModule="ChatBotApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YcO-mF-oXH">
+                                <rect key="frame" x="16" y="50" width="319" height="532"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Png-oJ-0uG">
+                                        <rect key="frame" x="0.0" y="0.0" width="319" height="532"/>
+                                    </imageView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kjq-lK-C9d">
+                                        <rect key="frame" x="10" y="10" width="299" height="472"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" id="pHX-f4-3Hx" customClass="MessageCell" customModule="ChatBotApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="299" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pHX-f4-3Hx" id="CZ4-fe-GNK">
+                                                    <rect key="frame" x="0.0" y="0.0" width="299" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="efP-YI-56l">
+                                                            <rect key="frame" x="8" y="8" width="508" height="28"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adn-Cd-KWg">
+                                                            <rect key="frame" x="20" y="16" width="484" height="12"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="efP-YI-56l" secondAttribute="trailing" constant="8" id="53e-w6-7Dc"/>
+                                                        <constraint firstItem="adn-Cd-KWg" firstAttribute="leading" secondItem="CZ4-fe-GNK" secondAttribute="leadingMargin" constant="5" id="5Lk-I5-hY3"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="adn-Cd-KWg" secondAttribute="trailing" constant="5" id="FnR-hi-0Et"/>
+                                                        <constraint firstAttribute="bottom" secondItem="efP-YI-56l" secondAttribute="bottom" constant="8" id="RPe-df-mpm"/>
+                                                        <constraint firstItem="efP-YI-56l" firstAttribute="leading" secondItem="CZ4-fe-GNK" secondAttribute="leading" constant="8" id="Z0G-tf-89h"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="adn-Cd-KWg" secondAttribute="bottom" constant="5" id="afU-Hq-7I2"/>
+                                                        <constraint firstItem="adn-Cd-KWg" firstAttribute="top" secondItem="CZ4-fe-GNK" secondAttribute="topMargin" constant="5" id="neQ-hn-4ro"/>
+                                                        <constraint firstItem="efP-YI-56l" firstAttribute="top" secondItem="CZ4-fe-GNK" secondAttribute="top" constant="8" id="z9u-Pl-BAx"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <outlet property="messageBGImageView" destination="efP-YI-56l" id="YlU-yN-L0J"/>
+                                                    <outlet property="messageLabel" destination="adn-Cd-KWg" id="vhx-Nz-HPG"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your text here ..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tnP-Xx-lwz">
+                                        <rect key="frame" x="10" y="492" width="254" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGU-y1-FCg">
+                                        <rect key="frame" x="269" y="492" width="40" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="bxa-oD-YXC"/>
+                                            <constraint firstAttribute="width" constant="40" id="mb6-6g-ItU"/>
+                                        </constraints>
+                                        <color key="tintColor" red="1" green="0.83529411760000005" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="sendImg"/>
+                                        <connections>
+                                            <action selector="sendButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QGh-zU-Xcf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="xGU-y1-FCg" secondAttribute="trailing" constant="10" id="7WU-Vd-R4I"/>
+                                    <constraint firstAttribute="bottom" secondItem="xGU-y1-FCg" secondAttribute="bottom" constant="10" id="MA6-7x-64U"/>
+                                    <constraint firstItem="tnP-Xx-lwz" firstAttribute="leading" secondItem="YcO-mF-oXH" secondAttribute="leading" constant="10" id="UvR-oZ-YiL"/>
+                                    <constraint firstItem="xGU-y1-FCg" firstAttribute="leading" secondItem="tnP-Xx-lwz" secondAttribute="trailing" constant="5" id="VAe-mX-AHR"/>
+                                    <constraint firstAttribute="trailing" secondItem="kjq-lK-C9d" secondAttribute="trailing" constant="10" id="WBj-6M-sSC"/>
+                                    <constraint firstItem="kjq-lK-C9d" firstAttribute="top" secondItem="YcO-mF-oXH" secondAttribute="top" constant="10" id="aPT-QT-u53"/>
+                                    <constraint firstItem="Png-oJ-0uG" firstAttribute="leading" secondItem="YcO-mF-oXH" secondAttribute="leading" id="gZr-Bz-1dq"/>
+                                    <constraint firstAttribute="bottom" secondItem="Png-oJ-0uG" secondAttribute="bottom" id="hhG-PB-feh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Png-oJ-0uG" secondAttribute="trailing" id="kRY-oe-jL7"/>
+                                    <constraint firstItem="tnP-Xx-lwz" firstAttribute="top" secondItem="kjq-lK-C9d" secondAttribute="bottom" constant="10" id="qum-FU-rsW"/>
+                                    <constraint firstItem="kjq-lK-C9d" firstAttribute="leading" secondItem="YcO-mF-oXH" secondAttribute="leading" constant="10" id="s4L-Yu-IRc"/>
+                                    <constraint firstAttribute="bottom" secondItem="tnP-Xx-lwz" secondAttribute="bottom" constant="10" id="tyT-pF-TqC"/>
+                                    <constraint firstItem="Png-oJ-0uG" firstAttribute="top" secondItem="YcO-mF-oXH" secondAttribute="top" id="zSK-0L-Wma"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGX-su-wha">
+                                <rect key="frame" x="299" y="587" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Y0f-XI-mcR"/>
+                                    <constraint firstAttribute="height" constant="60" id="d3H-Be-ANR"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="chatbot"/>
+                                <connections>
+                                    <action selector="chatBotButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4b1-Dy-awj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YcO-mF-oXH" secondAttribute="trailing" constant="40" id="6k9-Ad-iJI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xGX-su-wha" secondAttribute="bottom" constant="20" id="Ndm-en-AND"/>
+                            <constraint firstItem="YcO-mF-oXH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fEN-eq-CbB"/>
+                            <constraint firstItem="xGX-su-wha" firstAttribute="top" secondItem="YcO-mF-oXH" secondAttribute="bottom" constant="5" id="gzc-oy-diC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xGX-su-wha" secondAttribute="trailing" constant="16" id="k8u-MS-fY8"/>
+                            <constraint firstItem="YcO-mF-oXH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="oLd-cd-dSq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="chatBotBGImg" destination="Png-oJ-0uG" id="V9b-Z7-qnt"/>
+                        <outlet property="chatBotTableView" destination="kjq-lK-C9d" id="hB1-3f-aYX"/>
+                        <outlet property="chatBotView" destination="YcO-mF-oXH" id="uxW-YV-3W0"/>
+                        <outlet property="yourMessageTextField" destination="tnP-Xx-lwz" id="C9M-sy-shN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2095" y="-116"/>
+        </scene>
+        <!--Dash BoardVC-->
+        <scene sceneID="5Qv-CZ-gdc">
+            <objects>
+                <viewController id="7BH-kL-yXf" customClass="DashBoardVC" customModule="ChatBotApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ow6-C7-fGC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zst-ae-26t">
+                                <rect key="frame" x="299" y="587" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="4a9-hh-kmq"/>
+                                    <constraint firstAttribute="width" constant="60" id="yYc-vz-O9A"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="chatbot"/>
+                                <connections>
+                                    <action selector="botButtonTapped:" destination="7BH-kL-yXf" eventType="touchUpInside" id="2Ji-m2-7nb"/>
+                                    <action selector="chatBotButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QfE-1m-kRa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2hA-xa-nZr" firstAttribute="bottom" secondItem="zst-ae-26t" secondAttribute="bottom" constant="20" id="sb0-eu-LOn"/>
+                            <constraint firstItem="2hA-xa-nZr" firstAttribute="trailing" secondItem="zst-ae-26t" secondAttribute="trailing" constant="16" id="zw3-UV-42v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2hA-xa-nZr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ppn-Ct-rfx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1366" y="-115"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chatbot" width="1024" height="1024"/>
+        <image name="sendImg" width="200" height="200"/>
+    </resources>
 </document>
