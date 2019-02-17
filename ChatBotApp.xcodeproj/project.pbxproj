@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30552B45220A21C2001CCBDE /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30552B44220A21C2001CCBDE /* StartVC.swift */; };
+		30F604BD220B6D9000F307EA /* MFAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30F604B4220B6D8E00F307EA /* MFAViewController.xib */; };
+		30F604BE220B6D9000F307EA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F604B5220B6D8E00F307EA /* SignUpViewController.swift */; };
+		30F604C0220B6D9000F307EA /* MFAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F604B7220B6D8F00F307EA /* MFAViewController.swift */; };
+		30F604C1220B6D9000F307EA /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F604B8220B6D8F00F307EA /* SignInViewController.swift */; };
+		30F604C2220B6D9000F307EA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F604B9220B6D8F00F307EA /* Constants.swift */; };
+		30F604C3220B6D9000F307EA /* ConfirmSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F604BA220B6D8F00F307EA /* ConfirmSignUpViewController.swift */; };
+		30F604C4220B6D9000F307EA /* ConfirmForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F604BB220B6D8F00F307EA /* ConfirmForgotPasswordViewController.swift */; };
+		30F604C5220B6D9000F307EA /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F604BC220B6D9000F307EA /* ForgotPasswordViewController.swift */; };
+		30F604C9220B780C00F307EA /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F604C8220B780C00F307EA /* WelcomeVC.swift */; };
 		31B3AC431131A7DC4A5CDE1B /* Pods_ChatBotApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19155D510E96785BE44B0B73 /* Pods_ChatBotApp.framework */; };
 		410C474C22084AD400EE15E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410C474B22084AD400EE15E7 /* AppDelegate.swift */; };
 		410C474E22084AD400EE15E7 /* ChatBotVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410C474D22084AD400EE15E7 /* ChatBotVC.swift */; };
@@ -20,6 +30,16 @@
 
 /* Begin PBXFileReference section */
 		19155D510E96785BE44B0B73 /* Pods_ChatBotApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatBotApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30552B44220A21C2001CCBDE /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
+		30F604B4220B6D8E00F307EA /* MFAViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFAViewController.xib; sourceTree = "<group>"; };
+		30F604B5220B6D8E00F307EA /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		30F604B7220B6D8F00F307EA /* MFAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFAViewController.swift; sourceTree = "<group>"; };
+		30F604B8220B6D8F00F307EA /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		30F604B9220B6D8F00F307EA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		30F604BA220B6D8F00F307EA /* ConfirmSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmSignUpViewController.swift; sourceTree = "<group>"; };
+		30F604BB220B6D8F00F307EA /* ConfirmForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		30F604BC220B6D9000F307EA /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		30F604C8220B780C00F307EA /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		410C474822084AD400EE15E7 /* ChatBotApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBotApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		410C474B22084AD400EE15E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		410C474D22084AD400EE15E7 /* ChatBotVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBotVC.swift; sourceTree = "<group>"; };
@@ -54,6 +74,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		30F604B3220B6D5100F307EA /* AWS_Cognito */ = {
+			isa = PBXGroup;
+			children = (
+				30F604BB220B6D8F00F307EA /* ConfirmForgotPasswordViewController.swift */,
+				30F604BA220B6D8F00F307EA /* ConfirmSignUpViewController.swift */,
+				30F604B9220B6D8F00F307EA /* Constants.swift */,
+				30F604BC220B6D9000F307EA /* ForgotPasswordViewController.swift */,
+				30F604B7220B6D8F00F307EA /* MFAViewController.swift */,
+				30F604B4220B6D8E00F307EA /* MFAViewController.xib */,
+				30F604B8220B6D8F00F307EA /* SignInViewController.swift */,
+				30F604B5220B6D8E00F307EA /* SignUpViewController.swift */,
+			);
+			path = AWS_Cognito;
+			sourceTree = "<group>";
+		};
 		410C473F22084AD400EE15E7 = {
 			isa = PBXGroup;
 			children = (
@@ -75,8 +110,11 @@
 		410C474A22084AD400EE15E7 /* ChatBotApp */ = {
 			isa = PBXGroup;
 			children = (
+				30F604B3220B6D5100F307EA /* AWS_Cognito */,
 				410C474B22084AD400EE15E7 /* AppDelegate.swift */,
+				30F604C8220B780C00F307EA /* WelcomeVC.swift */,
 				410C476322099BCD00EE15E7 /* DashBoardVC.swift */,
+				30552B44220A21C2001CCBDE /* StartVC.swift */,
 				410C4761220999CC00EE15E7 /* ChatbotManager.swift */,
 				410C474D22084AD400EE15E7 /* ChatBotVC.swift */,
 				410C475D22085F7700EE15E7 /* MessageCell.swift */,
@@ -158,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				410C475622084AD600EE15E7 /* LaunchScreen.storyboard in Resources */,
+				30F604BD220B6D9000F307EA /* MFAViewController.xib in Resources */,
 				410C475322084AD600EE15E7 /* Assets.xcassets in Resources */,
 				410C475122084AD400EE15E7 /* Main.storyboard in Resources */,
 			);
@@ -171,17 +210,25 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ChatBotApp/Pods-ChatBotApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
 				"${BUILT_PRODUCTS_DIR}/ApiAI/ApiAI.framework",
+				"${BUILT_PRODUCTS_DIR}/ScrollableGraphView/ScrollableGraphView.framework",
+				"${BUILT_PRODUCTS_DIR}/liquid-swipe/liquid_swipe.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProviderASF.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ApiAI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScrollableGraphView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/liquid_swipe.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -193,15 +240,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ChatBotApp-checkManifestLockResult.txt",
 			);
@@ -218,10 +261,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				410C474E22084AD400EE15E7 /* ChatBotVC.swift in Sources */,
+				30F604C3220B6D9000F307EA /* ConfirmSignUpViewController.swift in Sources */,
+				30F604C2220B6D9000F307EA /* Constants.swift in Sources */,
+				30F604C4220B6D9000F307EA /* ConfirmForgotPasswordViewController.swift in Sources */,
+				30F604BE220B6D9000F307EA /* SignUpViewController.swift in Sources */,
 				410C474C22084AD400EE15E7 /* AppDelegate.swift in Sources */,
+				30F604C9220B780C00F307EA /* WelcomeVC.swift in Sources */,
 				410C475E22085F7700EE15E7 /* MessageCell.swift in Sources */,
+				30F604C0220B6D9000F307EA /* MFAViewController.swift in Sources */,
+				30F604C5220B6D9000F307EA /* ForgotPasswordViewController.swift in Sources */,
 				410C476422099BCD00EE15E7 /* DashBoardVC.swift in Sources */,
 				410C4762220999CC00EE15E7 /* ChatbotManager.swift in Sources */,
+				30552B45220A21C2001CCBDE /* StartVC.swift in Sources */,
+				30F604C1220B6D9000F307EA /* SignInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

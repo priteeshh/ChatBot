@@ -33,7 +33,7 @@ class ChatBotVC: UIViewController {
                             resizingMode: .stretch)
             .withRenderingMode(.alwaysTemplate)
         chatBotBGImg.tintColor = UIColor(named: "chat_bubble_color_sent")
-        chatBotBGImg.tintColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 0.5)
+        chatBotBGImg.tintColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
         
         
         

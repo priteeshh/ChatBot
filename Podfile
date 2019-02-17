@@ -6,6 +6,11 @@ target 'ChatBotApp' do
   use_frameworks!
 
   # Pods for ChatBotApp
+
 pod 'ApiAI'
+pod 'liquid-swipe'
+pod 'AWSCore', '~> 2.8.0'
+pod 'AWSCognitoIdentityProvider', '~> 2.8.0'
+pod 'ScrollableGraphView'
 
 end
